@@ -1,0 +1,15 @@
+#transimg {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: red;
+}
+.slides ~ .intro{
+  background-image: none;
+}
+
+.mylogo  {
+  background-image: url(../images/ecetera-logo-grey.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
