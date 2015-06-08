@@ -8,6 +8,28 @@
   background-image: none;
 }
 
+.reveal h1, .reveal h2,
+.reveal h3, .reveal h4,
+.reveal h5, .reveal h6,
+.reveal p{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-transform: none;
+}
+
+.reveal h1{
+  font-size: 2.75em;
+}
+.reveal h2{
+  font-size: 1.5em;
+}
+.reveal h3{
+  font-size: 1.25em;
+}
+
+.reveal p {
+  font-size: 1.25em;
+}
+
 .mylogo  {
   background-image: url(../images/ecetera-logo-grey.png);
   background-repeat: no-repeat;
