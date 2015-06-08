@@ -23,10 +23,6 @@
  * sbt s3wsPrefix
  *
  */
-name := "You_should_Name_me"
 
-
-
-
-
+name := "2015/06/splunk-test-aws"
 
