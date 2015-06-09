@@ -43,7 +43,7 @@ spurious uploads to S3.
 name := "foobar"
 ```
 
-by default a <YEAR>/<MONTH>/ will be prefixed to the name, such that the talk would be at
+by default a ```<YEAR>/<MONTH>/``` will be prefixed to the name, such that the talk would be at
     http://techtalks.ecetera.com.au/techsync/2015/05/foobar/index.html
 
 The prefix can be modified, see the notes in build.sbt for details.
