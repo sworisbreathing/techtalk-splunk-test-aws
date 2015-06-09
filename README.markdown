@@ -19,12 +19,16 @@ Recursive [techtalk-template](http://techtalks.ecetera.com.au/techsync/2015/05/t
 
 2. Clone template  to your local machine:
 
+```
     $ git clone --depth 1 --origin source git@gitlab:techtalks/techtalk-template.git newTechTalk
+```
 
 3. Add your project's git repository
 
+```
     $ cd newTechTalk
     $ git remote add origin git@gitlab:techtalks/newTechTalk.git
+```
 
 ---
 
@@ -32,10 +36,12 @@ Recursive [techtalk-template](http://techtalks.ecetera.com.au/techsync/2015/05/t
 1. Edit build.sbt to provide the URI of the talk. You __MUST__ provide a name or the build will fail in order to prevent
 spurious uploads to S3.
 
+```
     // Give your techtalk a unique-ish name!
     // Can be:
     // name := "foobar"
     name := "foobar"
+```
 
 by default a <YEAR>/<MONTH>/ will be prefixed to the name, such that the talk would be at
     http://techtalks.ecetera.com.au/techsync/2015/05/foobar/index.html
@@ -44,16 +50,20 @@ The prefix can be modified, see the notes in build.sbt for details.
 
 2. (Optional) Set up your AWS credentials.
 
+```
     $ cat ~/.s3TechtalksCreds
     realm=Amazon S3
     host=techtalks.ecetera.com.au
     user=<Access Key ID>
     password=<Secret Access Key>
+```
 
 or add the following environment variables to you shell before executing this build
 
+```
     export AWS_ACCESS_KEY=<Access Key ID>
     export AWS_SECRET_KEY=<Secret Access Key>
+```
 
 ---
 
