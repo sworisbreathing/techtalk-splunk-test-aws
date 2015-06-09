@@ -25,11 +25,11 @@ object build extends Build {
     , progressBar in s3wsUpload := true
     , credentials += Credentials(Path.userHome / ".s3TechtalksCreds")
     , s3wsIncremental := true
-//    , s3wsPrefix <<= (name, tsyncprefix).apply((n, prefix) =>
-//      if(n == "CHANGE_MY_NAME" | n == "You_should_Name_me" | n == "")
-//        throw new Exception("You must name your Project")
-//      else  "techsync/" + prefix + "/" + n + "/")
-    , s3wsPrefix := "techsync/" + tsyncprefix.value + "/" + name.value + "/"
+    , s3wsPrefix <<= (name, tsyncprefix).apply((n, prefix) =>
+      if(n == "CHANGE_MY_NAME" | n == "You_should_Name_me" | n == "")
+        throw new Exception("You must name your Project")
+      else  "techsync/" + prefix + "/" + n + "/")
+//    , s3wsPrefix := "techsync/" + tsyncprefix.value + "/" + name.value + "/"
     , s3wsPrefix in s3wsUpload := s3wsPrefix.value
     , s3wsPrefix in s3wsDeleteAll := s3wsPrefix.value );
 
