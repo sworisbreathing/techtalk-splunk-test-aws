@@ -32,14 +32,19 @@ $ git remote add origin git@gitlab:techtalks/newTechTalk.git
 ---
 
 ## Setup/Configure
-1. Edit build.sbt to provide the URI
+1. Edit build.sbt to provide the URI of the talk. You __MUST__ provide a name or the build will fail in order to prevent
+spurious uploads to S3.
 ```
-// Give your techtalk a name!
+// Give your techtalk a unique-ish name!
 // Can be:
-// name := "foobar" or
-// name := "2015/05/foobar"
-name := "2015/05/techtalk-template"
+// name := "foobar"
+name := "foobar"
 ```
+
+by default a <YEAR>/<MONTH>/ will be prefixed to the name, such that the talk would be at
+    http://techtalks.ecetera.com.au/techsync/2015/05/foobar/index.html
+
+The prefix can be modified, see the notes in build.sbt for details.
 
 2. (Optional) Set up your AWS credentials.
 
@@ -49,6 +54,13 @@ realm=Amazon S3
 host=techtalks.ecetera.com.au
 user=<Access Key ID>
 password=<Secret Access Key>
+```
+
+or add the following environment variables to you shell before executing this build
+
+```bash
+export AWS_ACCESS_KEY=<Access Key ID>
+export AWS_SECRET_KEY=<Secret Access Key>
 ```
 
 ---

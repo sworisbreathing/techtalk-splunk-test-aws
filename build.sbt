@@ -8,7 +8,7 @@
  *   where <year> is the current year and <month> is the current month.
  *
  * you can modify the prefix by using PrefixKeys.tsyncprefix setting,
- * eg to create an s3 path of "techsync/wibble/foobar" you woul do this:-
+ * eg to create an s3 path of "techsync/wibble/foobar" you would do this:-
  *
  *
  *
@@ -24,3 +24,9 @@
  *
  */
 name := "You_should_Name_me"
+
+
+
+
+
+
