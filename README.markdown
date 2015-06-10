@@ -20,7 +20,7 @@ Recursive [techtalk-template](http://techtalks.ecetera.com.au/techsync/2015/05/t
 2. Clone template  to your local machine:
 
 ```
-$ git clone --depth 1 --origin source git@gitlab:techtalks/techtalk-template.git newTechTalk
+$ git clone --depth 1 --origin source git@gitlab.services.ecetera.com.au:techtalks/techtalk-template.git newTechTalk
 ```
 
 3. Add your project's git repository
