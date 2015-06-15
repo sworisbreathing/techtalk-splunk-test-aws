@@ -27,7 +27,7 @@ $ git clone --depth 1 --origin source git@gitlab.services.ecetera.com.au:techtal
 
 ```
 $ cd newTechTalk
-$ git remote add origin git@gitlab:techtalks/newTechTalk.git
+$ git remote add origin git@techtalks.ecetera.com.au:techtalks/newTechTalk.git
 ```
 
 ---
