@@ -103,6 +103,20 @@ http://localhost:8000/assets/index.html
 
 ---
 
+## Themes
+
+Out-of-the-box themes are located in `assets/reveal/css/theme`.
+To change your theme, change the line in your index.html to choose the
+appropriate CSS theme file.
+
+    <head>
+      ...
+      <link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+      ...
+    </head>
+    
+---
+
 ## Publish to S3
 
 ```shell
