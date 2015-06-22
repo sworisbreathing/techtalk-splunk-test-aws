@@ -35,3 +35,44 @@
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+.jitter-base * {
+  animation-name: jitter;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+.jitter-forward {
+  animation-direction: forward;
+  animation-play-state: running;
+}
+.jitter-reverse {
+  animation-direction: reverse;
+  animation-play-state: running;
+}
+@keyframes jitter {
+  0% {
+    transform: skew(0deg) translate(0px, 0px);
+  }
+  17% {
+    transform: skew(1.5deg) translate(-1px, 0px);
+  }
+  32% {
+    transform: skew(1.5deg) translate(0px, 0px);
+  }
+  48% {
+    transform: skew(0deg) translate(0px, 0px);
+  }
+  63% {
+    transform: skew(-1.5deg) translate(1px, 0px);
+  }
+  79% {
+    transform: skew(-1.5deg) translate(0px, 0px);
+  }
+  100% {
+    transform: skew(0deg) translate(0px, 0px);
+  }
+}
