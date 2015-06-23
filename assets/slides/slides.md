@@ -97,3 +97,35 @@ Big Data<!-- .element: class="fragment" data-fragment-index="1" -->
 Monitoring/Alerting<!-- .element: class="fragment" data-fragment-index="2" -->
 
 Analytics<!-- .element: class="fragment" data-fragment-index="3" -->
+
+
+
+# How Splunk Works
+
+## Simplified Version
+
+
+
+## Forwarders
+
+Collect data (logs) from remote systems<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Send collected data to indexers<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Indexers
+
+Store collected data in indexes<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Fetch data from indexes<br />
+(e.g. run search jobs)<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Search Heads
+
+User Interface (Web)<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Create/Dispatch Search Jobs<!-- .element: class="fragment" data-fragment-index="2" -->
+
