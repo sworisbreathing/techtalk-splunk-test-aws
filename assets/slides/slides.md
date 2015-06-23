@@ -45,7 +45,7 @@ http://ecetera.com.au<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 
-## Mission
+## Ecetera's Mission
 
 to rid the world of badly behaving applications<!-- .element: class="fragment" data-fragment-index="1" -->
 
