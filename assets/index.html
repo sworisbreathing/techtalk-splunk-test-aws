@@ -44,8 +44,8 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     var sections = d3.selectAll("section");
     sections.classed("jitter-base", true);
 
-    d3.selectAll("section > :nth-child(odd)").classed("jitter-forward", true);
-    d3.selectAll("section > :nth-child(even)").classed("jitter-reverse", true);
+    d3.selectAll("section > :nth-child(odd):not(pre)").classed("jitter-forward", true);
+    d3.selectAll("section > :nth-child(even):not(pre)").classed("jitter-reverse", true);
 
     /*
      * The jitter animation looks pretty bad on images, so let's remove it.
