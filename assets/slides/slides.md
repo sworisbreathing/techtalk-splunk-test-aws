@@ -25,11 +25,13 @@ Let's Build a Test Environment!<!-- .element: class="fragment" data-fragment-ind
 
 
 
-# $whoami
+## $whoami
 
 Steven Swor<!-- .element: class="fragment" data-fragment-index="1" -->
 
-@sworisbreathing (GitHub, StackExchange, etc.)<!-- .element: class="fragment" data-fragment-index="2" style="font-size: 1.0em;" -->
+sworisbreathing (GitHub, StackExchange)<!-- .element: class="fragment" data-fragment-index="2" -->
+
+steven_swor (Splunk Answers)<!-- .element: class="fragment" data-fragment-index="2" -->
 
 ![My gravatar](./images/gravatar.jpeg)<!-- .element: class="fragment" data-fragment-index="2" -->
 
