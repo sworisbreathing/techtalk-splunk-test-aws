@@ -91,6 +91,26 @@ in <body>
 
 ---
 
+## Speaker Notes
+
+Add speaker notes like so:
+
+    ...
+    slide content goes here
+
+    Note:
+    speaker notes go here, for the above slide
+
+
+
+    next slide starts here
+
+
+then hit the `s` key during the presentation to pull up the speaker
+notes.
+
+---
+
 ## Previewing changes
 If you're working on a Unix machine, chances are you have python installed. Your presentation must be hosted over HTTP in order to make use of markdown files.
 
