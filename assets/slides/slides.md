@@ -39,6 +39,8 @@ Steven Swor<!-- .element: class="fragment" data-fragment-index="1" -->
 
 (ee-SET-uh-ruh)<!-- .element: class="fragment" data-fragment-index="1" -->
 
+http://ecetera.com.au<!-- .element: class="fragment" data-fragment-index="2" -->
+
 
 
 ## Mission
@@ -87,6 +89,8 @@ Manage Infrastructure<!-- .element: class="fragment" data-fragment-index="1" -->
 ![Splunk Logo](./images/splunk-logo.png)
 
 (spluhnk)<!-- .element: class="fragment" data-fragment-index="1" -->
+
+http://splunk.com<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 
