@@ -41,13 +41,13 @@ Steven Swor<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
-# Mission
+## Mission
 
 to rid the world of badly behaving applications<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
-# What Ecetera Does
+## What Ecetera Does
 
 DevOps<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -57,7 +57,7 @@ Web-Scale IT<!-- .element: class="fragment" data-fragment-index="3" -->
 
 
 
-# What I Do
+## What I Do
 
 APM<!-- .element: class="fragment" data-fragment-index="1" -->
 
@@ -67,14 +67,16 @@ Performance Testing<!-- .element: class="fragment" data-fragment-index="3" -->
 
 Consulting<!-- .element: class="fragment" data-fragment-index="4" -->
 
-Splunk Stuff<!-- .element: class="fragment" data-fragment-index="5" -->
+Write Jittery Presentations<!-- .element: class="fragment" data-fragment-index="5" -->
 
 
 
 
-# What Don't I Do?
+## What Don't I Do?
 
 Manage Infrastructure<!-- .element: class="fragment" data-fragment-index="1" -->
+
+(...except when I have to) <!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 
@@ -88,7 +90,7 @@ Manage Infrastructure<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
-# What Splunk Does
+## What Splunk Does
 
 Big Data<!-- .element: class="fragment" data-fragment-index="1" -->
 
