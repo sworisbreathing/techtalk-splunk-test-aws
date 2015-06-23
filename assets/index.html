@@ -34,6 +34,27 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 <!--[if lt IE 9]>
                 <script src="reveal/js/lib/js/html5shiv.js"></script>
                 <![endif]-->
+<script>
+  /**
+   * Uses d3 to apply the `jitter-base` class to all `section` tags,
+   * as well as alternating the `jitter-forward` and `jitter-reverse`
+   * classes on all descendants of `section`.
+   */
+  function jitter_all_slides() {
+    var sections = d3.selectAll("section");
+    sections.classed("jitter-base", true);
+
+    var sectionContents = sections.selectAll("*");
+
+    sectionContents.classed("jitter-forward", function(d,i){
+      return i % 2 == 0;
+    });
+    sectionContents.classed("jitter-reverse", function(d,i){
+      return i % 2 != 0;
+    });
+  }
+  }
+</script>
 </head>
 
 <body>
@@ -96,17 +117,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
   <script>
     document.onreadystatechange = function(){
       if (document.readyState == "complete") {
-        var sections = d3.selectAll("section");
-        sections.classed("jitter-base", true);
-
-        var sectionContents = sections.selectAll("*");
-
-        sectionContents.classed("jitter-forward", function(d,i){
-          return i % 2 == 0;
-        });
-        sectionContents.classed("jitter-reverse", function(d,i){
-          return i % 2 != 0;
-        });
+        jitter_all_slides();
       }
     };
   </script>
