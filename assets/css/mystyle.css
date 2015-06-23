@@ -52,25 +52,26 @@
 .jitter-reverse {
   animation-direction: reverse;
   animation-play-state: running;
+  animation-duration: 0.2s;
 }
 @keyframes jitter {
   0% {
     transform: skew(0deg) translate(0px, 0px);
   }
   17% {
-    transform: skew(1.5deg) translate(-1px, 0px);
+    transform: skew(0.5deg) translate(-1px, 0px);
   }
   32% {
-    transform: skew(1.5deg) translate(0px, 0px);
+    transform: skew(0.5deg) translate(0px, 0px);
   }
   48% {
     transform: skew(0deg) translate(0px, 0px);
   }
   63% {
-    transform: skew(-1.5deg) translate(1px, 0px);
+    transform: skew(-0.5deg) translate(1px, 0px);
   }
   79% {
-    transform: skew(-1.5deg) translate(0px, 0px);
+    transform: skew(-0.5deg) translate(0px, 0px);
   }
   100% {
     transform: skew(0deg) translate(0px, 0px);
