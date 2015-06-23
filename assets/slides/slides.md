@@ -129,3 +129,38 @@ User Interface (Web)<!-- .element: class="fragment" data-fragment-index="1" -->
 
 Create/Dispatch Search Jobs<!-- .element: class="fragment" data-fragment-index="2" -->
 
+
+
+# Acknowledgements
+
+
+
+## Reveal.JS
+
+Makes writing presentations easy<!-- .element: class="fragment" data-fragment-index="1" -->
+
+http://lab.hakim.se/reveal-js/<!-- .element: class="fragment" data-fragment-index="2" -->
+
+https://github.com/hakimel/reveal.js<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## D3
+
+Makes transforming HTML easy<!-- .element: class="fragment" data-fragment-index="1" -->
+
+http://d3js.org<!-- .element: class="fragment" data-fragment-index="2" -->
+
+https://github.com/mbostock/d3<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Jitter Animation
+
+Used with permission from Asymmetric Publications<!-- .element: class="fragment" data-fragment-index="1" -->
+
+http://asymmetric.net/<!-- .element: class="fragment" data-fragment-index="2" -->
+
+http://www.kingdomofloathing.com<!-- .element: class="fragment" data-fragment-index="2" -->
+
+![A Splunk Ninja Is You!](./images/leftswordguy.gif)<!-- .element: class="fragment" data-fragment-index="2" -->
