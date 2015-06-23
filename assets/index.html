@@ -46,6 +46,20 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
     d3.selectAll("section > :nth-child(odd)").classed("jitter-forward", true);
     d3.selectAll("section > :nth-child(even)").classed("jitter-reverse", true);
+
+    /*
+     * The jitter animation looks pretty bad on images, so let's remove it.
+     *
+     * CSS has plenty of selectors for selecting descendants of a node,
+     * but doesn't offer much in the way of selecting ancestor nodes.
+     * Hence, we loop through all the nodes returned by the selector,
+     * and then apply our changes to the parent node.
+     */
+    d3.selectAll("section img").each(function(d,i){
+      this.parentNode.classList.remove("jitter-forward");
+      this.parentNode.classList.remove("jitter-reverse");
+    });
+
   }
 </script>
 </head>
