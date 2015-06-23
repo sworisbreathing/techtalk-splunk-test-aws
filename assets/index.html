@@ -38,21 +38,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
   /**
    * Uses d3 to apply the `jitter-base` class to all `section` tags,
    * as well as alternating the `jitter-forward` and `jitter-reverse`
-   * classes on all descendants of `section`.
+   * classes on all immediate children of `section`.
    */
   function jitter_all_slides() {
     var sections = d3.selectAll("section");
     sections.classed("jitter-base", true);
 
-    var sectionContents = sections.selectAll("*");
-
-    sectionContents.classed("jitter-forward", function(d,i){
-      return i % 2 == 0;
-    });
-    sectionContents.classed("jitter-reverse", function(d,i){
-      return i % 2 != 0;
-    });
-  }
+    d3.selectAll("section > :nth-child(odd)").classed("jitter-forward", true);
+    d3.selectAll("section > :nth-child(even)").classed("jitter-reverse", true);
   }
 </script>
 </head>
