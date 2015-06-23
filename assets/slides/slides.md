@@ -84,7 +84,9 @@ Manage Infrastructure<!-- .element: class="fragment" data-fragment-index="1" -->
 
 
 
-# The Upgrade
+# The App
+
+(a.k.a. "what are we upgrading?")<!-- .element: style="font-size: 0.8em;" -->
 
 
 
@@ -153,6 +155,76 @@ Deploys apps/addons to Splunk instances<!-- .element: class="fragment" data-frag
 
 
 
+# Upgrade Paths
+
+
+
+## Two Major Changes
+
+Upgrade Splunk across all environments<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Improve Splunk app deployment process<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Why Upgrade Splunk?
+
+Latest release: 6.2.3<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Currently deployed: 5.0.2<!-- .element: class="fragment" data-fragment-index="2" -->
+
+5.x release is more than 24 months old<!-- .element: class="fragment" data-fragment-index="3" -->
+
+Will reach End-Of-Life when 7.x is released<!-- .element: class="fragment" data-fragment-index="3" -->
+
+
+
+# Creating A Test Environment
+
+
+
+## AWS (Simplified Version)
+
+VMs provisioned "in the cloud"<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Pay only for what you use<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Well-documented APIs for automation<!-- .element: class="fragment" data-fragment-index="3" -->
+
+
+
+## ![Terraform Logo](./images/terraform-logo.png) Terraform
+<!-- .element: class="terraform-logo" -->
+
+Automates the nuts and bolts<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Create VMs<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Manage DNS and Networking<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Terraform Config Example
+
+    resource "aws_instance" "my_server_name" {
+      instance_type = "t1.micro"
+      ami = "${lookup(var.aws_amis, var.aws_region)}"
+      key_name = "${var.TF_VAR_key_name}"
+
+      connection {
+        user = "ubuntu"
+        key_file = "${var.TF_VAR_key_path}"
+      }
+
+      security_groups = [ "SSH" ]
+
+      tags = {
+        Name = "my_server_name"
+      }
+    }
+
+
+
 # So... How Did It Go?
 
 
@@ -166,8 +238,7 @@ Deploys apps/addons to Splunk instances<!-- .element: class="fragment" data-frag
 Time to create a new test environment from scratch: Less than
 5 minutes<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Environments created and destroyed in a two-week period: approx. 100<!--
-.element: class="fragment" data-fragment-index="2" -->
+Environments created and destroyed in a two-week period: approx. 100<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 

@@ -77,3 +77,13 @@
     transform: skew(0deg) translate(0px, 0px);
   }
 }
+
+.reveal .terraform-logo {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+}
+
+.reveal .terraform-logo img {
+  margin-bottom: 0px;
+}
+
