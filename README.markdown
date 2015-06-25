@@ -28,7 +28,29 @@ $ git clone --depth 1 --origin source git@gitlab.services.ecetera.com.au:techtal
 ```
 $ cd newTechTalk
 $ git remote add origin git@techtalks.ecetera.com.au:techtalks/newTechTalk.git
+$ git push origin master
 ```
+
+### Can't push?
+
+If your first push to the new repository fails with an error similar to the following:
+
+    $ git push origin master
+    Counting objects: 221, done.
+    Delta compression using up to 8 threads.
+    Compressing objects: 100% (193/193), done.
+    fatal: protocol error: expected old/new/ref, got 'shallow 205af7099a550f6423d17e994dc63870a1de5edd'
+    Writing objects: 100% (221/221), 313.75 KiB | 0 bytes/s, done.
+    Total 221 (delta 101), reused 9 (delta 0)
+    fatal: The remote end hung up unexpectedly
+    fatal: The remote end hung up unexpectedly
+
+You should be able to fix it by doing this:
+
+    $ git fetch source --unshallow
+    $ git push origin master
+
+You should only need to run `git fetch source --unshallow` for the initial push. Subsequent pushes to your repository should work normally.
 
 ---
 
