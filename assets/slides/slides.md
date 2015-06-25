@@ -223,6 +223,108 @@ Manage DNS and Networking<!-- .element: class="fragment" data-fragment-index="2"
       }
     }
 
+Note: Run `terraform apply` here.
+
+
+
+## ![Ansible Logo](./images/ansible_logo_black_square_small.png)
+<!-- .element: class="ansible-logo" -->
+
+Automates the OS bits<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Install software<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Start/stop services<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Orchestrate across multiple hosts<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Ansible Example
+
+    ---
+    - hosts: splunk_forwarders
+      roles:
+        - splunk_forwarder
+
+    - hosts: splunk_servers
+      roles:
+        - splunk_server
+        - splunk_deployment_server
+
+
+
+## Ansible Inventory
+
+Tells Ansible what hosts have what role<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Static => Flat File, read when Ansible runs<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Dynamic => Script, executed when Ansible runs<!-- .element: class="fragment" data-fragment-index="2" -->
+
+
+
+## Static Inventory Example
+
+    [splunk_forwarders]
+    tldhybqat01vth ansible_ssh_user=ubuntu ansible_ssh_host=54.253.22.104
+    ...
+
+    [splunk_forwarders:vars]
+    splunk_forwarder_deployment_server_host=10.248.16.108
+    splunk_forwarder_indexer_host=10.248.16.108
+
+    [splunk_servers]
+    tlpinfmgt03vth ansible_ssh_user=ubuntu ansible_ssh_host=54.206.204.196
+
+
+
+## Terraform + Ansible
+
+
+
+## Terraform
+
+Creates environment, gets IP addresses<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Generates "static" Ansible inventory<!-- .element: class="fragment" data-fragment-index="2" -->
+
+(using a Terraform template)<!-- .element: class="fragment" data-fragment-index="2" style="font-size: 0.8em" -->
+
+Destroys environment when we are done<!-- .element: class="fragment" data-fragment-index="3" -->
+
+Note: Run `terraform output ansible_inventory_rendered > ansible/ansible.inventory` here.
+
+
+
+## Ansible
+
+Reads "static" inventory<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Creates local service accounts<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Installs/updates software<!-- .element: class="fragment" data-fragment-index="3" -->
+
+Ensures daemon services are running<!-- .element: class="fragment" data-fragment-index="4" -->
+
+Note: Run `cd ansible` and `ansible-playbook --private-key=<path_to_private_key> playbook.yml`  here.
+
+
+
+## Upgrade Testing
+
+Everything in version control (git)<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Feature branches for upgrade paths<!-- .element: class="fragment" data-fragment-index="2" -->
+
+To test an upgrade:<!-- .element: class="fragment" data-fragment-index="3" -->
+
+    $ git checkout <branch_name>
+    $ ansible-playbook ...
+<!-- .element: class="fragment" data-fragment-index="3" -->
+
+Note: Run the two upgrades here.
+
 
 
 # So... How Did It Go?
