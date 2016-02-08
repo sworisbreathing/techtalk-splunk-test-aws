@@ -225,13 +225,13 @@ Manage DNS and Networking<!-- .element: class="fragment" data-fragment-index="2"
 
 ### Demo: Terraform Apply
 
-<video data-autoplay controls data-src="./videos/01_terraform_apply.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/01_terraform_apply.mp4" />
 
 
 
 ### Demo: Terraform Apply
 
-<video data-autoplay controls data-src="./videos/02_ec2_console_after_create.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/02_ec2_console_after_create.mp4" />
 
 
 
@@ -305,7 +305,7 @@ Destroys environment when we are done<!-- .element: class="fragment" data-fragme
 
 ### Demo: Terraform State -> Ansible Inventory
 
-<video data-autoplay controls data-src="./videos/03_terraform_output_inventory.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/03_terraform_output_inventory.mp4" />
 
 
 
@@ -323,13 +323,13 @@ Ensures daemon services are running<!-- .element: class="fragment" data-fragment
 
 ### Demo: Initial State
 
-<video data-autoplay controls data-src="./videos/04_install_splunk.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/04_install_splunk.mp4" />
 
 
 
 ### Demo: Initial State
 
-<video data-autoplay controls data-src="./videos/05_splunk_on_splunk_pre_upgrade.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/05_splunk_on_splunk_pre_upgrade.mp4" />
 
 
 
@@ -349,19 +349,19 @@ To test an upgrade:<!-- .element: class="fragment" data-fragment-index="3" -->
 
 ### Demo: Upgrade Splunk Forwarders
 
-<video data-autoplay controls data-src="./videos/06_splunk_forwarders_upgrade.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/06_splunk_forwarders_upgrade.mp4" />
 
 
 
 ### Demo: New Deployment Strategy
 
-<video data-autoplay controls data-src="./videos/07_new_deployment_strategy.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/07_new_deployment_strategy.mp4" />
 
 
 
 ### Demo: Infrastructure Destroyed
 
-<video data-autoplay controls data-src="./videos/08_instances_destroyed.mp4" />
+<video data-autoplay controls data-src="https://media.githubusercontent.com/media/sworisbreathing/techtalk-splunk-test-aws/gh-pages/videos/08_instances_destroyed.mp4" />
 
 
 
