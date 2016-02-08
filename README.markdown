@@ -1,139 +1,17 @@
-## Ecetera Techtalk Template.
+## Tech Talk: Testing Splunk in AWS with Terraform and Ansible
 
-Ecetera TechTalks are created using Reveal JS.
-Everything is contained within this project for you to publish techtalks to the Ecetera techtalks website using SBT.
-
-Purpose is to allow us to quickly create and publish presentations without going to too much trouble setting things up.
+This tech talk is written using Reveal.JS
 
 ---
 
-## How to use this template
-Recursive [techtalk-template](http://techtalks.ecetera.com.au/techsync/2015/05/techtalk-template/index.html) template ;) (see techtalk branch)
+## Cloning
 
-
----
-
-## Clone the template
-1. Create a new project at [Gitlab](https://gitlab.services.ecetera.com.au/groups/techtalks)
-[](link)
-
-2. Clone template  to your local machine:
-
-```
-$ git clone --depth 1 --origin source git@gitlab.services.ecetera.com.au:techtalks/techtalk-template.git newTechTalk
-```
-
-3. Add your project's git repository
-
-```
-$ cd newTechTalk
-$ git remote add origin git@techtalks.ecetera.com.au:techtalks/newTechTalk.git
-$ git push origin master
-```
-
-### Can't push?
-
-If your first push to the new repository fails with an error similar to the following:
-
-    $ git push origin master
-    Counting objects: 221, done.
-    Delta compression using up to 8 threads.
-    Compressing objects: 100% (193/193), done.
-    fatal: protocol error: expected old/new/ref, got 'shallow 205af7099a550f6423d17e994dc63870a1de5edd'
-    Writing objects: 100% (221/221), 313.75 KiB | 0 bytes/s, done.
-    Total 221 (delta 101), reused 9 (delta 0)
-    fatal: The remote end hung up unexpectedly
-    fatal: The remote end hung up unexpectedly
-
-You should be able to fix it by doing this:
-
-    $ git fetch source --unshallow
-    $ git push origin master
-
-You should only need to run `git fetch source --unshallow` for the initial push. Subsequent pushes to your repository should work normally.
+1. Install the [Git LFS Extension](https://git-lfs.github.com/)
+2. Clone this repo
 
 ---
 
-## Setup/Configure
-1. Edit build.sbt to provide the URI of the talk. You __MUST__ provide a name or the build will fail in order to prevent
-spurious uploads to S3.
-
-```
-// Give your techtalk a unique-ish name!
-// Can be:
-// name := "foobar"
-name := "foobar"
-```
-
-by default a ```<YEAR>/<MONTH>/``` will be prefixed to the name, such that the talk would be at
-    http://techtalks.ecetera.com.au/techsync/2015/05/foobar/index.html
-
-The prefix can be modified, see the notes in build.sbt for details.
-
-2. (Optional) Set up your AWS credentials.
-
-```
-$ cat ~/.s3TechtalksCreds
-realm=Amazon S3
-host=techtalks.ecetera.com.au
-user=<Access Key ID>
-password=<Secret Access Key>
-```
-
-or add the following environment variables to you shell before executing this build
-
-```
-export AWS_ACCESS_KEY=<Access Key ID>
-export AWS_SECRET_KEY=<Secret Access Key>
-```
-
----
-
-## Editing your presentation
-1. Make sure you change your index.html
-```html
-...
-in <head>
-...
-    <title>Tech talk presentation template</title>
-    <meta name="description" content="A tech talk presentation template ">
-    <meta name="author" content="Eceterian">
-...
-in <body>
-...
-    <section class="intro">
-      <h1>The Ecetera presentation template</h1>
-      <p>
-      <small>Slides by
-        <a href="https://github.com/mistaka0s">Chao Luan</a>
-      </small>
-      </p>
-    </section>
-```
-
----
-
-## Speaker Notes
-
-Add speaker notes like so:
-
-    ...
-    slide content goes here
-
-    Note:
-    speaker notes go here, for the above slide
-
-
-
-    next slide starts here
-
-
-then hit the `s` key during the presentation to pull up the speaker
-notes.
-
----
-
-## Previewing changes
+## Previewing slides
 If you're working on a Unix machine, chances are you have python installed. Your presentation must be hosted over HTTP in order to make use of markdown files.
 
 ```
@@ -156,28 +34,3 @@ appropriate CSS theme file.
       <link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
       ...
     </head>
-    
----
-
-## Publish to S3
-
-```shell
-$ sbt s3wsUpload
-```
-
----
-
-## Visit your published techtalk.
-Once uploaded, you can access your tech talk at
-http://techtalks.ecetera.com.au/techsync/{name}
-
-Eg:
-http://techtalks.ecetera.com.au/techsync/2015/05/techtalk-template/index.htm
-
----
-
-# TODO:
-* Fix up themeing and styling
-* Finish documentation.
-* Intergrate into CI (no need for self publishing)
-* Source AWS Keys and Secret from environment
