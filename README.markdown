@@ -19,13 +19,13 @@ $ python -m SimpleHTTPServer 8000
 Serving HTTP on 0.0.0.0 port 8000 ..
 ```
 
-http://localhost:8000/assets/index.html
+http://localhost:8000/index.html
 
 ---
 
 ## Themes
 
-Out-of-the-box themes are located in `assets/reveal/css/theme`.
+Out-of-the-box themes are located in `reveal/css/theme`.
 To change your theme, change the line in your index.html to choose the
 appropriate CSS theme file.
 
