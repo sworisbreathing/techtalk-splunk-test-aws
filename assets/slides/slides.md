@@ -37,41 +37,39 @@ steven_swor (Splunk Answers)<!-- .element: class="fragment" data-fragment-index=
 
 
 
-![Ecetera Logo](./images/ecetera_logo_grey.png)
+![Telstra Logo](./images/Telstra_logo.svg)
 
-(ee-SET-uh-ruh)<!-- .element: class="fragment" data-fragment-index="1" -->
+(TEL-struh)<!-- .element: class="fragment" data-fragment-index="1" -->
 
-http://ecetera.com.au<!-- .element: class="fragment" data-fragment-index="2" -->
-
-
-
-## Ecetera's Mission
-
-to rid the world of badly behaving applications<!-- .element: class="fragment" data-fragment-index="1" -->
+http://telstra.com<!-- .element: class="fragment" data-fragment-index="2" -->
 
 
 
-## What Ecetera Does
+## Telstra's Purpose
 
-DevOps<!-- .element: class="fragment" data-fragment-index="1" -->
+To create a brilliant connected future for everyone<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Application Performance Monitoring (APM)<!-- .element: class="fragment" data-fragment-index="2" -->
 
-Web-Scale IT<!-- .element: class="fragment" data-fragment-index="3" -->
+
+## What Telstra Does
+
+Telecommunications<!-- .element: class="fragment" data-fragment-index="1" -->
+
+Media<!-- .element: class="fragment" data-fragment-index="2" -->
+
+Lots of Other Stuff<!-- .element: class="fragment" data-fragment-index="3" -->
 
 
 
 ## What I Do
 
-APM<!-- .element: class="fragment" data-fragment-index="1" -->
+Software Engineering<!-- .element: class="fragment" data-fragment-index="1" -->
 
-Functional Test Automation<!-- .element: class="fragment" data-fragment-index="2" -->
+Functional and Performance Testing<!-- .element: class="fragment" data-fragment-index="2" -->
 
-Performance Testing<!-- .element: class="fragment" data-fragment-index="3" -->
+Application Peformance Management<!-- .element: class="fragment" data-fragment-index="3" -->
 
-Consulting<!-- .element: class="fragment" data-fragment-index="4" -->
-
-Write Jittery Presentations<!-- .element: class="fragment" data-fragment-index="5" -->
+Write Jittery Presentations<!-- .element: class="fragment" data-fragment-index="4" -->
 
 
 
