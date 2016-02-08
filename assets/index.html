@@ -59,6 +59,10 @@ if( window.location.search.match( /print-pdf/gi ) ) {
       this.parentNode.classList.remove("jitter-forward");
       this.parentNode.classList.remove("jitter-reverse");
     });
+    d3.selectAll("section video").each(function(d,i){
+      this.classList.remove("jitter-forward");
+      this.classList.remove("jitter-reverse");
+    });
 
   }
 </script>
